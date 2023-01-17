@@ -37,7 +37,7 @@ CE = - ∑ t * log(f(s)) [t is label]
 
 ## Code Snippet
 ### Step - 01:
-```
+```python
 logits = [[4.0, 2.0, 1.0], [0.0, 5.0, 1.0]
 labels = [[1.0, 0.0, 0.0], [0.0, 0.8, 0.2]]
 logits_soft = tf.nn.softmax(logits)
@@ -51,7 +51,7 @@ array([[0.8437947 , 0.11419519, 0.04201007],
 
 [0.00657326, 0.9755587 , 0.01786798]], dtype=float32)>
 ### Step - 02:
-```
+```python
 ce = np.sum(-(labels * np.log(logits_soft)), axis=1)
 ce
 ```
@@ -60,7 +60,7 @@ ce
 array([0.16984606, 0.82474496])
 
 ### Entire syntax:
-```
+```python
 softmax_cross_entropy_with_logits(labels=labels, logits=logits)
 ```
 ### Output:
