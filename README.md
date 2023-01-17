@@ -43,3 +43,10 @@ labels = [[1.0, 0.0, 0.0], [0.0, 0.8, 0.2]]
 logits_soft = tf.nn.softmax(logits)
 logits_soft
 ```
+### Output:
+
+<tf.Tensor: shape=(2, 3), dtype=float32, numpy=
+
+array([[0.8437947 , 0.11419519, 0.04201007],
+
+[0.00657326, 0.9755587 , 0.01786798]], dtype=float32)>
