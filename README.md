@@ -50,3 +50,21 @@ logits_soft
 array([[0.8437947 , 0.11419519, 0.04201007],
 
 [0.00657326, 0.9755587 , 0.01786798]], dtype=float32)>
+### Step - 02:
+```
+ce = np.sum(-(labels * np.log(logits_soft)), axis=1)
+ce
+```
+### Output:
+
+array([0.16984606, 0.82474496])
+
+### Entire syntax:
+```
+softmax_cross_entropy_with_logits(labels=labels, logits=logits)
+```
+### Output:
+
+<tf.Tensor: shape=(2,), dtype=float32,
+
+numpy=array([0.16984604, 0.82474494], dtype=float32)>
