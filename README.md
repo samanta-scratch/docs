@@ -1,1 +1,3 @@
 # docs
+
+theme : minima
